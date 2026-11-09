@@ -1,0 +1,42 @@
+{
+  "store_name": "Northwind Outfitters",
+  "website": "https://northwind-outfitters.example",
+  "support_email": "support@northwind-outfitters.example",
+  "support_hours": "Mon-Fri 9:00-18:00 CET",
+  "tracking_page": "https://northwind-outfitters.example/track?n={n}",
+  "carriers": {
+    "UPS": "https://www.ups.com/track?tracknum={n}",
+    "USPS": "https://tools.usps.com/go/TrackConfirmAction?tLabels={n}",
+    "FedEx": "https://www.fedex.com/fedextrack/?trknbr={n}",
+    "DHL": "https://www.dhl.com/global-en/home/tracking/tracking-express.html?tracking-id={n}"
+  },
+  "shipping": {
+    "processing_days": 2,
+    "grace_days": 2,
+    "transit_days": { "default": [3, 7], "UPS": [2, 5], "DHL": [3, 6], "USPS": [3, 8] },
+    "free_shipping_over": 75,
+    "international": "We ship to the US, Canada, the UK and the EU. International orders take 7-14 business days; duties are included at checkout."
+  },
+  "returns": {
+    "window_days": 30,
+    "damaged_window_days": 60,
+    "auto_approve": true,
+    "auto_approve_max_value": 200,
+    "free_return_reasons": ["damaged", "wrong_item"],
+    "return_fee": "$6.95",
+    "portal_url": "https://northwind-outfitters.example/returns",
+    "return_address": "Northwind Outfitters Returns\n1200 Harbor Way, Unit 4\nOakland, CA 94607, USA",
+    "refund_time": "5-7 business days after we receive the item, to your original payment method",
+    "non_returnable_keywords": ["gift card", "clearance", "final sale"],
+    "non_returnable_sku_prefixes": ["FS-"],
+    "non_returnable_order_tags": ["final-sale"]
+  },
+  "faqs": [
+    { "q": "How long does shipping take?", "a": "Orders ship within 2 business days. Delivery then takes 3-7 business days in the US (UPS 2-5). Express options are shown at checkout.", "keywords": ["how long", "shipping time", "delivery time", "days", "ship"] },
+    { "q": "Do you ship internationally?", "a": "Yes: we ship to the US, Canada, the UK and the EU. International orders take 7-14 business days and duties are included at checkout.", "keywords": ["international", "abroad", "canada", "uk", "europe", "country", "worldwide"] },
+    { "q": "What is your return policy?", "a": "You can return unused items within 30 days of delivery (60 days if damaged or wrong). Start a return right here with /return. Clearance and gift cards are final sale.", "keywords": ["return policy", "policy", "how many days", "return window"] },
+    { "q": "Is shipping free?", "a": "Shipping is free on orders over $75 in the US. Below that, standard shipping is $5.95.", "keywords": ["free shipping", "free", "shipping cost", "cost", "price of shipping"] },
+    { "q": "Can I change my address?", "a": "If your order hasn't shipped yet, tap Talk to a person and we'll update the address. Once it has shipped, use the carrier link in your tracking to redirect it.", "keywords": ["change address", "address", "wrong address"] },
+    { "q": "How do I use a discount code?", "a": "Enter the code at checkout in the 'Discount code' box. Only one code can be used per order.", "keywords": ["discount", "coupon", "promo", "code"] }
+  ]
+}

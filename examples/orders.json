@@ -1,0 +1,124 @@
+{
+  "_comment": "Sample orders in the Shopify Admin REST shape. Dates like now-5d / now-6h are resolved when the demo starts.",
+  "orders": [
+    {
+      "id": 5001, "name": "#1001", "email": "emma.wilson@example.com", "phone": "+1 415 555 0101",
+      "created_at": "now-4d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "USD", "total_price": "64.50", "tags": "", "note": "",
+      "customer": { "first_name": "Emma", "last_name": "Wilson", "email": "emma.wilson@example.com" },
+      "shipping_address": { "name": "Emma Wilson", "city": "Portland", "country": "United States" },
+      "line_items": [
+        { "id": 11, "title": "Merino Hiking Socks (3-pack)", "variant_title": "M", "sku": "SOCK-M", "quantity": 1, "price": "29.50" },
+        { "id": 12, "title": "Trail Cap", "variant_title": "Olive", "sku": "CAP-OL", "quantity": 1, "price": "35.00" }
+      ],
+      "fulfillments": [
+        { "id": 9001, "status": "success", "shipment_status": "in_transit", "tracking_company": "UPS", "tracking_number": "1Z999AA10123456784", "created_at": "now-2d", "updated_at": "now-1d", "line_items": [{ "id": 11, "quantity": 1 }, { "id": 12, "quantity": 1 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5002, "name": "#1002", "email": "liam.chen@example.com", "phone": "+1 212 555 0102",
+      "created_at": "now-16d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "USD", "total_price": "127.00", "tags": "", "note": "",
+      "customer": { "first_name": "Liam", "last_name": "Chen", "email": "liam.chen@example.com" },
+      "shipping_address": { "name": "Liam Chen", "city": "New York", "country": "United States" },
+      "line_items": [
+        { "id": 21, "title": "Alpine Fleece Jacket", "variant_title": "M / Navy", "sku": "FLC-M-NV", "quantity": 1, "price": "89.00" },
+        { "id": 22, "title": "Merino Beanie", "variant_title": "Grey", "sku": "BEA-GR", "quantity": 2, "price": "19.00" }
+      ],
+      "fulfillments": [
+        { "id": 9002, "status": "success", "shipment_status": "delivered", "tracking_company": "USPS", "tracking_number": "9400100000000000000001", "created_at": "now-14d", "updated_at": "now-10d", "line_items": [{ "id": 21, "quantity": 1 }, { "id": 22, "quantity": 2 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5003, "name": "#1003", "email": "sofia.garcia@example.com", "phone": "+34 600 555 103",
+      "created_at": "now-15d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "EUR", "total_price": "187.00", "tags": "", "note": "",
+      "customer": { "first_name": "Sofía", "last_name": "García", "email": "sofia.garcia@example.com" },
+      "shipping_address": { "name": "Sofía García", "city": "Madrid", "country": "Spain" },
+      "line_items": [
+        { "id": 31, "title": "Waterproof Hiking Boots", "variant_title": "39", "sku": "BOOT-39", "quantity": 1, "price": "142.00" },
+        { "id": 32, "title": "Trekking Poles", "variant_title": "", "sku": "POLE", "quantity": 1, "price": "45.00" }
+      ],
+      "fulfillments": [
+        { "id": 9003, "status": "success", "shipment_status": "delivered", "tracking_company": "DHL", "tracking_number": "JD014600006281230001", "created_at": "now-13d", "updated_at": "now-8d", "line_items": [{ "id": 32, "quantity": 1 }] },
+        { "id": 9004, "status": "success", "shipment_status": "in_transit", "tracking_company": "DHL", "tracking_number": "JD014600006281234567", "created_at": "now-12d", "updated_at": "now-9d", "line_items": [{ "id": 31, "quantity": 1 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5004, "name": "#1004", "email": "noah.brown@example.com", "phone": "",
+      "created_at": "now-52d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "USD", "total_price": "119.00", "tags": "", "note": "",
+      "customer": { "first_name": "Noah", "last_name": "Brown", "email": "noah.brown@example.com" },
+      "shipping_address": { "name": "Noah Brown", "city": "Austin", "country": "United States" },
+      "line_items": [{ "id": 41, "title": "Ultralight Daypack 22L", "variant_title": "Black", "sku": "PACK-22", "quantity": 1, "price": "119.00" }],
+      "fulfillments": [
+        { "id": 9005, "status": "success", "shipment_status": "delivered", "tracking_company": "UPS", "tracking_number": "1Z999AA10123456999", "created_at": "now-50d", "updated_at": "now-45d", "line_items": [{ "id": 41, "quantity": 1 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5005, "name": "#1005", "email": "olivia.martin@example.com", "phone": "+1 305 555 0105",
+      "created_at": "now-6h", "financial_status": "paid", "fulfillment_status": null, "currency": "USD", "total_price": "58.00", "tags": "", "note": "",
+      "customer": { "first_name": "Olivia", "last_name": "Martin", "email": "olivia.martin@example.com" },
+      "shipping_address": { "name": "Olivia Martin", "city": "Miami", "country": "United States" },
+      "line_items": [{ "id": 51, "title": "Enamel Camp Mug", "variant_title": "Red", "sku": "MUG-RD", "quantity": 2, "price": "29.00" }],
+      "fulfillments": [],
+      "refunds": []
+    },
+    {
+      "id": 5006, "name": "#1006", "email": "james.taylor@example.com", "phone": "+1 312 555 0106",
+      "created_at": "now-9d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "USD", "total_price": "420.00", "tags": "", "note": "",
+      "customer": { "first_name": "James", "last_name": "Taylor", "email": "james.taylor@example.com" },
+      "shipping_address": { "name": "James Taylor", "city": "Chicago", "country": "United States" },
+      "line_items": [{ "id": 61, "title": "2-Person Backpacking Tent", "variant_title": "", "sku": "TENT-2P", "quantity": 1, "price": "420.00" }],
+      "fulfillments": [
+        { "id": 9006, "status": "success", "shipment_status": "delivered", "tracking_company": "UPS", "tracking_number": "1Z999AA10123457000", "created_at": "now-7d", "updated_at": "now-4d", "line_items": [{ "id": 61, "quantity": 1 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5007, "name": "#1007", "email": "amira.haddad@example.com", "phone": "+971 50 555 0107",
+      "created_at": "now-5d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "USD", "total_price": "76.00", "tags": "", "note": "",
+      "customer": { "first_name": "Amira", "last_name": "Haddad", "email": "amira.haddad@example.com" },
+      "shipping_address": { "name": "Amira Haddad", "city": "Dubai", "country": "United Arab Emirates" },
+      "line_items": [{ "id": 71, "title": "Insulated Water Bottle", "variant_title": "1L", "sku": "BTL-1L", "quantity": 2, "price": "38.00" }],
+      "fulfillments": [
+        { "id": 9007, "status": "success", "shipment_status": "out_for_delivery", "tracking_company": "DHL", "tracking_number": "JD014600006289999999", "created_at": "now-3d", "updated_at": "now-3h", "line_items": [{ "id": 71, "quantity": 2 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5008, "name": "#1008", "email": "lucas.dubois@example.com", "phone": "+33 6 55 50 10 08",
+      "created_at": "now-12d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "EUR", "total_price": "94.00", "tags": "", "note": "",
+      "customer": { "first_name": "Lucas", "last_name": "Dubois", "email": "lucas.dubois@example.com" },
+      "shipping_address": { "name": "Lucas Dubois", "city": "Lyon", "country": "France" },
+      "line_items": [
+        { "id": 81, "title": "Clearance Rain Poncho", "variant_title": "One size", "sku": "FS-PONCHO", "quantity": 1, "price": "45.00" },
+        { "id": 82, "title": "Packable Rain Jacket", "variant_title": "L", "sku": "RJ-L", "quantity": 1, "price": "49.00" }
+      ],
+      "fulfillments": [
+        { "id": 9008, "status": "success", "shipment_status": "delivered", "tracking_company": "DHL", "tracking_number": "JD014600006281111111", "created_at": "now-10d", "updated_at": "now-6d", "line_items": [{ "id": 81, "quantity": 1 }, { "id": 82, "quantity": 1 }] }
+      ],
+      "refunds": []
+    },
+    {
+      "id": 5009, "name": "#1009", "email": "mia.johnson@example.com", "phone": "",
+      "created_at": "now-3d", "cancelled_at": "now-2d", "financial_status": "refunded", "fulfillment_status": null, "currency": "USD", "total_price": "39.00", "tags": "", "note": "",
+      "customer": { "first_name": "Mia", "last_name": "Johnson", "email": "mia.johnson@example.com" },
+      "shipping_address": { "name": "Mia Johnson", "city": "Denver", "country": "United States" },
+      "line_items": [{ "id": 91, "title": "Camp Lantern", "variant_title": "", "sku": "LANT", "quantity": 1, "price": "39.00" }],
+      "fulfillments": [],
+      "refunds": [{ "refund_line_items": [{ "line_item_id": 91, "quantity": 1 }] }]
+    },
+    {
+      "id": 5010, "name": "#1010", "email": "ethan.moore@example.com", "phone": "+1 206 555 0110",
+      "created_at": "now-6d", "financial_status": "paid", "fulfillment_status": "fulfilled", "currency": "USD", "total_price": "54.00", "tags": "", "note": "",
+      "customer": { "first_name": "Ethan", "last_name": "Moore", "email": "ethan.moore@example.com" },
+      "shipping_address": { "name": "Ethan Moore", "city": "Seattle", "country": "United States" },
+      "line_items": [{ "id": 101, "title": "Hammock with Straps", "variant_title": "", "sku": "HAM", "quantity": 1, "price": "54.00" }],
+      "fulfillments": [
+        { "id": 9010, "status": "success", "shipment_status": "attempted_delivery", "tracking_company": "FedEx", "tracking_number": "771234567890", "created_at": "now-4d", "updated_at": "now-5h", "line_items": [{ "id": 101, "quantity": 1 }] }
+      ],
+      "refunds": []
+    }
+  ]
+}

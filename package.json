@@ -1,0 +1,28 @@
+{
+  "name": "ecommerce-order-status-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for Shopify stores: buyers track shipments, get delivery updates and start returns on their own, with staff approval and human handoff.",
+  "type": "module",
+  "bin": {
+    "order-bot": "bin/order-bot.js"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node bin/order-bot.js start",
+    "serve": "node bin/order-bot.js serve",
+    "chat": "node bin/order-bot.js chat",
+    "demo": "node bin/order-bot.js demo",
+    "test": "node --test --test-reporter=spec \"test/**/*.test.js\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": ["telegram-bot", "shopify", "order-tracking", "returns", "ecommerce", "customer-support", "gemini", "ai"],
+  "author": "plari6",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  }
+}
